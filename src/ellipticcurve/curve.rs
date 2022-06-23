@@ -14,8 +14,7 @@ impl fmt::Display for Oid {
             .map(|v| v.to_string())
             .collect::<Vec<String>>()
             .join(",");
-
-        fmt.write_str(value.as_str());
+        fmt.write_str(value.as_str())?;
         Ok(())
     }
 }
