@@ -1,5 +1,3 @@
-extern crate num_bigint;
-
 use num_bigint::{BigInt, ToBigInt};
 use std::{fmt, str::FromStr};
 
