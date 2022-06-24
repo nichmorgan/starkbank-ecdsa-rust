@@ -3,7 +3,7 @@ use num_bigint::BigInt;
 use num_traits::{One, Zero};
 use std::{collections::HashMap, fmt, str::FromStr};
 
-struct Oid(Vec<i32>);
+pub struct Oid(pub Vec<i32>);
 
 impl fmt::Display for Oid {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
